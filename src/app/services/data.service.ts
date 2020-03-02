@@ -13,14 +13,14 @@ export interface Tip {
   providedIn: 'root'
 })
 export class DataService {
-  public tips: Tip[] = [
+  private tips: Tip[] = [
     {
       id: 0,
       title: 'Turn off non-human notifications',
       explanation: 'Restrict notifications to what is strictly necessary. You can also try turning off notifications entirely.',
       tags: '#notifications',
       hasAction: false,
-      actionText: '',
+      actionText: 'Step 1 anaja \nStep 2 oasdhasd\nStep 3 sadasdsda',
     },
     {
       id: 1,
@@ -33,13 +33,36 @@ export class DataService {
     }
   ];
 
-  constructor() { }
+  private readonly shuffledTips: Tip[];
+
+  constructor() {
+    this.shuffledTips = DataService.shuffle(this.tips);
+  }
+
+  private static shuffle(array: any[]): any[] {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
 
   public getTips(): Tip[] {
-    return this.tips;
+    return this.shuffledTips;
   }
 
   public getTipById(id: number): Tip {
-    return this.tips[id];
+    return this.shuffledTips[id];
   }
 }
