@@ -18,8 +18,6 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-  
-  <ion-list>
-    <app-tip *ngFor="let tip of getTips()" [tip]="tip"></app-tip>
-  </ion-list>
+
+  <app-tip *ngFor="let tip of getTips()" [tip]="tip"></app-tip>
 </ion-content>
