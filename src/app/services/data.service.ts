@@ -7,6 +7,7 @@ export interface Tip {
   id: number;
   hasAction: boolean;
   actionText: string;
+  icon: string;
 }
 
 @Injectable({
@@ -21,6 +22,7 @@ export class DataService {
       tags: '#notifications',
       hasAction: false,
       actionText: 'Step 1 anaja \nStep 2 oasdhasd\nStep 3 sadasdsda',
+      icon: 'notifications-circle'
     },
     {
       id: 1,
@@ -30,6 +32,7 @@ export class DataService {
       tags: '#notifications',
       hasAction: false,
       actionText: '',
+      icon: 'notifications-circle'
     }
   ];
 
