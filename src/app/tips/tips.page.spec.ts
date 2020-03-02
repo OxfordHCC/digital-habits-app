@@ -3,19 +3,19 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { TipComponentModule } from '../tip/tip.module';
 
-import { HomePage } from './home.page';
+import { TipsPage } from './tips.page';
 
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+describe('TipsPage', () => {
+  let component: TipsPage;
+  let fixture: ComponentFixture<TipsPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomePage ],
+      declarations: [ TipsPage ],
       imports: [IonicModule.forRoot(), TipComponentModule, RouterModule.forRoot([])]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(TipsPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

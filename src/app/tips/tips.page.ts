@@ -3,10 +3,10 @@ import { DataService, Tip } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  templateUrl: 'tips.page.html',
+  styleUrls: ['tips.page.scss'],
 })
-export class HomePage {
+export class TipsPage {
   constructor(private data: DataService) {}
 
   refresh(ev) {
