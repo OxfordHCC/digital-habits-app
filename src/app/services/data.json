@@ -1,18 +1,184 @@
 [
-    {
-        "id": 0,
-        "title": "Turn off non-human notifications",
-        "subtitle": "Restrict notifications to what is strictly necessary. You can also try turning off notifications entirely.",
-        "tags": "#notifications",
-        "text": "Step 1 anaja \nStep 2 oasdhasd\nStep 3 sadasdsda",
-        "icon": "notifications-circle"
+    {"id":0,
+        "title": "Limit Notifications",
+        "subtitle": "Only allow notifications from apps that you really care about.",
+        "text": "For instance messages, social media, calendar… ",
+        "icon": "notifications-circle",
+        "tags": "#notifications"
+
     },
-    {
-        "id": 1,
-        "title": "Turn off all notifications",
-        "subtitle": "Restrict notifications to what is strictly necessary. If you fear missing out, you can also try turning off non-human notifications only.",
-        "tags": "#notifications",
-        "text": null,
-        "icon": "notifications-circle"
+    
+    {"id":1,
+        "title": "Turn off all Group Conversations Notifications",
+        "subtitle": "Group conversations do not require you to take action immediately.",
+        "text": "Group conversations are generally not messages aimed at you directly and can wait. If something is urgent people will identify you on messenger for instance. ",
+        "icon": "notifications-circle",
+        "tags": "#notifications"
+
+    },
+    {"id":2,
+        "title": "Disable Lock Screen Notifications",
+        "subtitle": "Do not get distracted until you want to check your messages.",
+        "text": "Help on removing lock screen notifications",
+        "icon": "notifications-circle",
+        "tags": "#notifications"
+
+    },
+    {"id":3,
+        "title": "Turn off all Notifications",
+        "subtitle": "Turning off all notifications will help you stay focused on what you are doing.",
+        "text": "Help for turning of all notifications",
+        "icon": "notifications-circle",
+        "tags": "#notifications"
+
+    },
+    {"id":4,
+        "title": "Use Silent Mode",
+        "subtitle": "Only allow phone calls to reach you..",
+        "text": "Help for silent mode",
+        "icon": "notifications-circle",
+        "tags": "#notifications"
+
+    },
+    {"id":5,
+        "title": "Phone-free mornings",
+        "subtitle": "Increase the time between waking up and phone checks.",
+        "text": "80% of smartphone users check their mobile phone within 15 minutes of waking up, and almost half (46%) check it before they even get out of bed. ",
+        "icon": "notifications-circle",
+        "tags": "#dailylife"
+
+    },
+    {"id":6,
+        "title": "Phone-free nights",
+        "subtitle": "Sleep with your phone in another room.",
+        "text": "Put a charging deck for your phone away from your bed, ideally in another room.",
+        "icon": "notifications-circle",
+        "tags": "#dailylife"
+
+    },
+    {"id":7,
+        "title": "Limit reachability",
+        "subtitle": "Restrict the number of apps through which people can reach you directly.",
+        "text": "Choose a restricted number of apps through which people can directly. Ex: messenger + whatsapp only. So you don’t have to check so many inboxes.",
+        "icon": "notifications-circle",
+        "tags": "#dailylife #badhabits"
+
+    },
+
+    {"id":8,
+        "title": "Phone unlocking",
+        "subtitle": "Set up a long password to unlock your phone.",
+        "text": "This will prevent you from using your phone too often. Don’t use face recognition, fingerprint recognition etc...",
+        "icon": "notifications-circle",
+        "tags": "#downgrade"
+
+    },
+    {"id":9,
+        "title": "Uninstall facebook app",
+        "subtitle": "Use facebook local instead.",
+        "text": "Facebook Local is an app where you can monitor the events you’ve been invited to and what is happening around you.",
+        "icon": "notifications-circle",
+        "tags": "#alternatives #socialmedia #badhabits"
+
+    },
+    {"id":10,
+        "title": "Delete interactive games",
+        "subtitle": "Only use static puzzles on your phone.",
+        "text": "Interactive games are fun but they are much more addictive. Try to stick with puzzle games.",
+        "icon": "notifications-circle",
+        "tags": "#games #badhabits"
+
+    },
+    {"id":11,
+        "title": "Delete all games",
+        "subtitle": "Try not to use your phone when you get bored.",
+        "text": "When bored, try not to use your phone as the default option. Look at other tips on what you can do instead. ",
+        "icon": "notifications-circle",
+        "tags": "#games #badhabits"
+
+    },
+    {"id":12,
+        "title": "Listen to podcasts",
+        "subtitle": "Get access to information without looking at a screen.",
+        "text": "Find some good podcasts out there (radio ?)",
+        "icon": "notifications-circle",
+        "tags": "#goodhabits"
+
+    },
+    {"id":13,
+        "title": "Read eBooks",
+        "subtitle": "Focus on better content.",
+        "text": "Rather than read a feed of mildly interesting stuff on social media, try to find good ebooks that you can read. So that when you open your phone to fight boredom, you are doing something good.",
+        "icon": "notifications-circle",
+        "tags": "#goodhabits"
+
+    },
+    {"id":14,
+        "title": "Get an alarm clock",
+        "subtitle": "Don’t wake up with your phone.",
+        "text": "help.",
+        "icon": "notifications-circle",
+        "tags": "#otherdevice"
+
+    },
+    {"id":15,
+        "title": "Get a real watch",
+        "subtitle": "Know what time it is without being distracted.",
+        "text": "help.",
+        "icon": "notifications-circle",
+        "tags": "#otherdevice"
+
+    },
+    {"id":16,
+        "title": "Get a smart watch",
+        "subtitle": "And only allow calendar reminders and phone calls on watch.",
+        "text": "A smartwatch limits the number of times you will need to access your phone.",
+        "icon": "notifications-circle",
+        "tags": "#otherdevice"
+
+    },
+    {"id":17,
+        "title": "Get bluetooth earbuds",
+        "subtitle": "Limit the number of times you need to access your phone.",
+        "text": "help.",
+        "icon": "notifications-circle",
+        "tags": "#otherdevice"
+
+    },
+    {"id":18,
+        "title": "Black and White Mode",
+        "subtitle": "Change your screen colors to ‘Grey levels’.",
+        "text": "Colorful patterns are a great way to keep you hooked on your phone, and red notifications keep your mind into alert mode. With black and white mode, you are more eager to stay focused on the world around you.",
+        "icon": "notifications-circle",
+        "tags": "#downgrade #settings"
+    },
+    {"id":19,
+        "title": "Limit App Usage",
+        "subtitle": "Limit the maximum number of times you can open an app.",
+        "text": "help. ",
+        "icon": "notifications-circle",
+        "tags": "#downgrade #settings"
+    },
+    {"id":20,
+        "title": "Number of unlocking on Lock Screen",
+        "subtitle": "Monitor the number of times you check on your phone.",
+        "text": "How to change lock screen background ?",
+        "icon": "notifications-circle",
+        "tags": "#awareness #settings"
+    },
+    {"id":21,
+        "title": "(Advanced) Disable animations",
+        "subtitle": "Make your phone less addictive by disabling animations.",
+        "text": "(requires developper mode)",
+        "icon": "notifications-circle",
+        "tags": "#downgrade #settings #advanced"
+    },
+    {"id": 22,
+        "title": "(Advanced) Slow down your phone",
+        "subtitle": "Making your phone slower will make the battery last longer and your phone less attractive.",
+        "text": "requires root privileges",
+        "icon": "notifications-circle",
+        "tags": "#downgrade #settings #advanced"
     }
+
 ]
