@@ -1,5 +1,7 @@
 {
   "name": "DigitalHabits",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
