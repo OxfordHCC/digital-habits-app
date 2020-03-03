@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Tip } from '../services/data.service';
+import {DataService, Tip} from '../services/data.service';
 
 @Component({
   selector: 'app-tip',
@@ -9,7 +9,7 @@ import { Tip } from '../services/data.service';
 export class TipComponent implements OnInit {
   @Input() tip: Tip;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {}
 }

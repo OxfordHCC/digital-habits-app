@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {DataService} from '../services/data.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class GoalsPage {
 
-  constructor() {}
+  constructor(private data: DataService) {}
 
 }

@@ -13,5 +13,47 @@
     </ion-toolbar>
   </ion-header>
 
-  <p>Nothing added yet. Choose some goals from the 'tips' tab.</p>
+  <p *ngIf="!data.getGoals() || data.getGoals().length == 0">Nothing added yet. Choose some goals from the 'tips' tab.</p>
+  <ion-card *ngFor="let goal of data.getGoals(); let i = index" [attr.data-index]="i">
+    <ion-card-header>
+      <ion-card-subtitle>
+        {{ data.getTips()[goal.tipId].tags }}
+        <ion-note class="ion-float-right" style="font-weight: normal">Added: {{ goal.added | date }}</ion-note>
+      </ion-card-subtitle>
+      <ion-card-title>Goal {{ i + 1 }}: {{ data.getTips()[goal.tipId].title }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>
+        Did you keep it up for seven days?
+        <ion-button shape="round" size="small">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </ion-button>
+        <ion-button shape="round" size="small">
+          <ion-icon name="thumbs-down"></ion-icon>
+        </ion-button>
+      </div>
+      <div>
+        Did it you find it helpful?
+        <ion-button shape="round" size="small">
+          <ion-icon name="thumbs-up"></ion-icon>
+        </ion-button>
+        <ion-button shape="round" size="small">
+          <ion-icon name="thumbs-down"></ion-icon>
+        </ion-button>
+      </div>
+      <!--<p>
+        {{ data.getTips()[goal.tipId].explanation }}
+      </p>-->
+      <div class="ion-text-center">
+        <ion-button (click)="data.toggleGoal(goal.tipId)">
+          Remove goal
+        </ion-button>
+      </div>
+    </ion-card-content>
+
+    <!--<ion-footer>
+
+    </ion-footer>-->
+  </ion-card>
 </ion-content>

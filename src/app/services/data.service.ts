@@ -1,4 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Storage } from '@ionic/storage';
+// @ts-ignore
+import data from './data.json';
+
+export interface Goal {
+  tipId: number;
+  added: Date;
+  helpful: boolean;
+  daysStreak: number;
+}
 
 export interface Tip {
   title: string;
@@ -14,33 +24,22 @@ export interface Tip {
   providedIn: 'root'
 })
 export class DataService {
-  private tips: Tip[] = [
-    {
-      id: 0,
-      title: 'Turn off non-human notifications',
-      explanation: 'Restrict notifications to what is strictly necessary. You can also try turning off notifications entirely.',
-      tags: '#notifications',
-      hasAction: false,
-      actionText: 'Step 1 anaja \nStep 2 oasdhasd\nStep 3 sadasdsda',
-      icon: 'notifications-circle'
-    },
-    {
-      id: 1,
-      title: 'Turn off all notifications',
-      explanation: 'Restrict notifications to what is strictly necessary.' +
-          'If you fear missing out, you can also try turning off non-human notifications only.',
-      tags: '#notifications',
-      hasAction: false,
-      actionText: '',
-      icon: 'notifications-circle'
-    }
-  ];
 
-  private readonly shuffledTips: Tip[];
-
-  constructor() {
+  constructor(private storage: Storage) {
     this.shuffledTips = DataService.shuffle(this.tips);
+
+    this.storage.get('goals').then( goals => {
+      console.log(goals);
+
+      if (goals) {
+        this.goals = goals;
+      }
+      // this.addGoal(0);
+    });
   }
+  private goals: Goal[] = [];
+  private tips: Tip[] = data;
+  public readonly shuffledTips: Tip[];
 
   private static shuffle(array: any[]): any[] {
     let currentIndex = array.length, temporaryValue, randomIndex;
@@ -59,6 +58,40 @@ export class DataService {
     }
 
     return array;
+  }
+
+  public findGoal(tipId: number): number {
+    for (const [index, goal] of this.goals.entries()) {
+      if (goal.tipId === tipId) {
+        return index;
+      }
+    }
+    return -1;
+  }
+
+  public toggleGoal(tipId: number) {
+    const index = this.findGoal(tipId);
+    if (index >= 0) {
+      this.goals.splice(index, 1);
+    } else {
+      const goal: Goal = {
+        tipId,
+        added: new Date(),
+        helpful: null,
+        daysStreak: 0
+      };
+
+      this.goals.push(goal);
+    }
+    this.saveGoals();
+  }
+
+  private saveGoals() {
+    this.storage.set('goals', this.goals.filter( value => value !== undefined));
+  }
+
+  public getGoals(): Goal[] {
+    return this.goals;
   }
 
   public getTips(): Tip[] {

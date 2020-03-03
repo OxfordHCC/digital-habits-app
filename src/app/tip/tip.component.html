@@ -10,35 +10,31 @@
     </p>
 
     <div class="ion-text-center" *ngIf="tip.hasAction">
-      <ion-button [routerLink]="'/tip/' + tip.id">
+      <ion-button [routerLink]="'/goal/' + tip.id">
         Help me fix it
       </ion-button>
     </div>
-  </ion-card-content>
 
-  <ion-footer>
-    <div class="ion-text-center ion-align-self-center">
-      <ion-button shape="round" size="small">
-        <ion-icon name="thumbs-up"></ion-icon>
-      </ion-button>
-      <ion-button shape="round" size="small">
-        <ion-icon name="thumbs-down"></ion-icon>
+    <div class="ion-text-center">
+      <ion-button (click)="data.toggleGoal(tip.id)">
+        <span *ngIf="data.findGoal(tip.id) == -1">Add to goals</span>
+        <span *ngIf="data.findGoal(tip.id) >=  0">Remove from goals</span>
       </ion-button>
     </div>
-  </ion-footer>
+  </ion-card-content>
 </ion-card>
 
-<!--<ion-item *ngIf="tip" [routerLink]="'/tip/' + tip.id" [detail]="false">
-  <div slot="start" [class]="!tip.read ? 'dot dot-unread' : 'dot'"></div>
+<!--<ion-item *ngIf="goal" [routerLink]="'/goal/' + goal.id" [detail]="false">
+  <div slot="start" [class]="!goal.read ? 'dot dot-unread' : 'dot'"></div>
   <ion-label class="ion-text-wrap">
     <h2>
-      {{ tip.title }}
+      {{ goal.title }}
       <span class="date">
-        <ion-note>{{ tip.date }}</ion-note>
+        <ion-note>{{ goal.date }}</ion-note>
         <ion-icon name="chevron-forward" size="small" *ngIf="isIos()"></ion-icon>
       </span>
     </h2>
-    <h3>{{ tip.tags }}</h3>
+    <h3>{{ goal.tags }}</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
