@@ -12,11 +12,10 @@ export interface Goal {
 
 export interface Tip {
   title: string;
-  explanation: string;
+  subtitle: string;
   tags: string;
   id: number;
-  hasAction: boolean;
-  actionText: string;
+  text: string;
   icon: string;
 }
 
@@ -99,6 +98,10 @@ export class DataService {
   }
 
   public getTipById(id: number): Tip {
-    return this.shuffledTips[id];
+    for (const tip of this.shuffledTips) {
+      if (tip.id === id) {
+        return tip;
+      }
+    }
   }
 }

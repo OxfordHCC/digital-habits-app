@@ -2,19 +2,17 @@
     {
         "id": 0,
         "title": "Turn off non-human notifications",
-        "explanation": "Restrict notifications to what is strictly necessary. You can also try turning off notifications entirely.",
+        "subtitle": "Restrict notifications to what is strictly necessary. You can also try turning off notifications entirely.",
         "tags": "#notifications",
-        "hasAction": false,
-        "actionText": "Step 1 anaja \nStep 2 oasdhasd\nStep 3 sadasdsda",
+        "text": "Step 1 anaja \nStep 2 oasdhasd\nStep 3 sadasdsda",
         "icon": "notifications-circle"
     },
     {
         "id": 1,
         "title": "Turn off all notifications",
-        "explanation": "Restrict notifications to what is strictly necessary. If you fear missing out, you can also try turning off non-human notifications only.",
+        "subtitle": "Restrict notifications to what is strictly necessary. If you fear missing out, you can also try turning off non-human notifications only.",
         "tags": "#notifications",
-        "hasAction": false,
-        "actionText": "",
+        "text": null,
         "icon": "notifications-circle"
     }
 ]
