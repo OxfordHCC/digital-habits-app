@@ -17,6 +17,20 @@ iOS: To be released soon.
 
 This app was developed with Ionic v5.
 
+### Development
+
+Use `ionic serve` and debug in web browser.
+
+### Deployment
+
+To build for Android:
+
+```bash
+ionic build --prod
+npx cap copy android
+npx cap open android
+```
+
 ## Credits
 
 This app uses Material icons from Google.
