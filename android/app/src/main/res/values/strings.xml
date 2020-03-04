@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">DigitalHabits</string>
-    <string name="title_activity_main">DigitalHabits</string>
+    <string name="app_name">Digital Habits</string>
+    <string name="title_activity_main">Digital Habits</string>
     <string name="package_name">build.digital.habits</string>
     <string name="custom_url_scheme">build.digital.habits</string>
 </resources>
