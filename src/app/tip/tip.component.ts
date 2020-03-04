@@ -11,7 +11,7 @@ import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 export class TipComponent implements OnInit {
   @Input() tip: Tip;
 
-  constructor(private data: DataService,
+  constructor(public data: DataService,
               private toastController: ToastController,
               private localNotifications: LocalNotifications) { }
 

@@ -7,7 +7,7 @@ Digital Habits aims to help you develop healthy digital habits. It comes with ti
 </p>
 ## Installation
 
-Android: Just head over to the Google Play Store.
+Android: Download [here](https://play.google.com/store/apps/details?id=build.digital.habits) on the Google Play Store.
 
 iOS: To be released soon.
 

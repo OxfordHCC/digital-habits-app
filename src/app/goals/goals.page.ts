@@ -8,6 +8,6 @@ import {DataService} from '../services/data.service';
 })
 export class GoalsPage {
 
-  constructor(private data: DataService) {}
+  constructor(public data: DataService) {}
 
 }
