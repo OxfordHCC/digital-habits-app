@@ -1,0 +1,9 @@
+{
+  "appId": "build.digital.habits",
+  "appName": "DigitalHabits",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/konrad/.local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/192.6241897/bin/studio.sh"
+}
