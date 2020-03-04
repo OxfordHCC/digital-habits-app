@@ -1,26 +1,23 @@
-<ion-card *ngIf="tip">
-  <ion-card-header>
-    <ion-card-subtitle>{{ tip.tags }}</ion-card-subtitle>
-    <ion-card-title><ion-icon name="notifications-circle" color="primary"></ion-icon> {{ tip.title }}</ion-card-title>
+<ion-card *ngIf="tip" [routerLink]="'/goal/' + tip.id">
+  
+    
+      <ion-button color='light'>
+        <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline" (click)="data.toggleGoal(tip.id)"></ion-icon>
+        <ion-icon *ngIf="data.findGoal(tip.id) >=0 " name="star"></ion-icon>
+      </ion-button>
+      <ion-card-header>
+      <ion-card-subtitle>{{ tip.tags }}
+    </ion-card-subtitle>
+    <ion-card-title size="auto">
+      <ion-icon name="{{tip.icon}}" color="primary"></ion-icon> {{ tip.title }} 
+      
+     </ion-card-title>
   </ion-card-header>
 
   <ion-card-content>
     <p>
       {{ tip.subtitle }}
     </p>
-
-    <div class="ion-text-center" *ngIf="tip.text">
-      <ion-button [routerLink]="'/goal/' + tip.id">
-        Help me fix it
-      </ion-button>
-    </div>
-
-    <div class="ion-text-center">
-      <ion-button (click)="data.toggleGoal(tip.id)">
-        <span *ngIf="data.findGoal(tip.id) == -1">Add to goals</span>
-        <span *ngIf="data.findGoal(tip.id) >=  0">Remove from goals</span>
-      </ion-button>
-    </div>
   </ion-card-content>
 </ion-card>
 

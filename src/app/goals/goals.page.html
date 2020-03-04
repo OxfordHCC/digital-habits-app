@@ -24,24 +24,26 @@
     </ion-card-header>
 
     <ion-card-content>
-      <div>
-        Did you keep it up for seven days?
-        <ion-button shape="round" size="small">
-          <ion-icon name="thumbs-up"></ion-icon>
-        </ion-button>
-        <ion-button shape="round" size="small">
-          <ion-icon name="thumbs-down"></ion-icon>
-        </ion-button>
-      </div>
-      <div>
-        Did it you find it helpful?
-        <ion-button shape="round" size="small">
-          <ion-icon name="thumbs-up"></ion-icon>
-        </ion-button>
-        <ion-button shape="round" size="small">
-          <ion-icon name="thumbs-down"></ion-icon>
-        </ion-button>
-      </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>Did you keep it up for seven days?</ion-col>
+          <ion-col size="auto"><ion-button shape="round" size="small">
+            <ion-icon name="thumbs-up"></ion-icon>
+          </ion-button></ion-col>
+          <ion-col size="auto"><ion-button shape="round" size="small" color="tertiary">
+            <ion-icon name="thumbs-down"></ion-icon>
+          </ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>Did it you find it helpful?</ion-col>
+          <ion-col size="auto"><ion-button shape="round" size="small" color="success">
+            <ion-icon name="happy-outline"></ion-icon>
+          </ion-button></ion-col>
+          <ion-col size="auto"><ion-button shape="round" size="small" color="danger">
+            <ion-icon name="sad-outline"></ion-icon>
+          </ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
       <!--<p>
         {{ data.getTips()[goal.tipId].subtitle }}
       </p>-->
