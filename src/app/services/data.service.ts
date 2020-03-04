@@ -24,40 +24,15 @@ export interface Tip {
   providedIn: 'root'
 })
 export class DataService {
+  private goals: Goal[] = [];
+  private tips: Tip[] = data;
 
   constructor(private storage: Storage) {
-    this.shuffledTips = DataService.shuffle(this.tips);
-
     this.storage.get('goals').then( goals => {
-      console.log(goals);
-
       if (goals) {
         this.goals = goals;
       }
-      // this.addGoal(0);
     });
-  }
-  private goals: Goal[] = [];
-  private tips: Tip[] = data;
-  public readonly shuffledTips: Tip[];
-
-  private static shuffle(array: any[]): any[] {
-    let currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
   }
 
   public findGoal(tipId: number): number {
@@ -108,11 +83,11 @@ export class DataService {
   }
 
   public getTips(): Tip[] {
-    return this.shuffledTips;
+    return this.tips;
   }
 
   public getTipById(id: number): Tip {
-    for (const tip of this.shuffledTips) {
+    for (const tip of this.tips) {
       if (tip.id === id) {
         return tip;
       }
