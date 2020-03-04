@@ -5,6 +5,11 @@ Digital Habits aims to help you develop healthy digital habits. It comes with ti
 <p align="center">
   <img alt="Digital Habits Logo" src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" style="display: block; margin: 0 auto;" height="100%" width="200" >
 </p>
+## Installation
+
+Android: Just head over to the Google Play Store.
+
+iOS: To be released soon.
 
 ## Build
 
