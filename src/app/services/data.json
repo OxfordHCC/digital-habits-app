@@ -34,7 +34,7 @@
     },
     {"id":4,
         "title": "Use Silent Mode",
-        "subtitle": "You could set your phone such to allow only phone calls to reach you directly.",
+        "subtitle": "You could set your phone to allow only phone calls to reach you directly.",
         "text": "Help for silent mode",
         "icon": "notifications-off",
         "tags": "#notifications"
@@ -91,7 +91,7 @@
     },
     {"id":11,
         "title": "Delete all Games",
-        "subtitle": "There are probably better ways to kill boredom. When not say hello to the person next to you on the train?",
+        "subtitle": "There are probably better ways to kill boredom. Why not say hello to the person next to you on the train?",
         "text": "When bored, try not to use your phone as the default option. Look at other tips on what you can do instead. ",
         "icon": "game-controller",
         "tags": "#games #badhabits"
@@ -107,7 +107,7 @@
     },
     {"id":13,
         "title": "Read eBooks",
-        "subtitle": "Reading eBooks will help you concentrate for a longer time on a single subject, rather than being overflooded by breaking news or social media.",
+        "subtitle": "Reading eBooks will help you concentrate for a longer time on a single subject, rather than drowning in breaking news or social media.",
         "text": "Rather than read a feed of mildly interesting stuff on social media, try to find good ebooks that you can read. So that when you open your phone to fight boredom, you are doing something good.",
         "icon": "book",
         "tags": "#goodhabits"
