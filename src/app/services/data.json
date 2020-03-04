@@ -18,7 +18,7 @@
     },
     {"id":2,
         "title": "Disable Lock Screen Notifications",
-        "subtitle": "Do not get distracted until you want to check your messages.",
+        "subtitle": "Do not get distracted until you really need to check your messages.",
         "text": "Help on removing lock screen notifications",
         "icon": "notifications-off-circle",
         "tags": "#notifications"
@@ -34,7 +34,7 @@
     },
     {"id":4,
         "title": "Use Silent Mode",
-        "subtitle": "Only allow phone calls to reach you..",
+        "subtitle": "Only allow phone calls to reach you directly.",
         "text": "Help for silent mode",
         "icon": "notifications-off",
         "tags": "#notifications"
@@ -42,7 +42,7 @@
     },
     {"id":5,
         "title": "Phone-free mornings",
-        "subtitle": "Increase the time between waking up and phone checks.",
+        "subtitle": "Increase the time between waking up and checking up your phone. Try to begin with 15 minutes and increase gradually.",
         "text": "80% of smartphone users check their mobile phone within 15 minutes of waking up, and almost half (46%) check it before they even get out of bed. ",
         "icon": "bed",
         "tags": "#dailylife"
@@ -50,7 +50,7 @@
     },
     {"id":6,
         "title": "Phone-free nights",
-        "subtitle": "Sleep with your phone in another room.",
+        "subtitle": "Put a charging deck for your phone away from your bed, ideally in another room.",
         "text": "Put a charging deck for your phone away from your bed, ideally in another room.",
         "icon": "bed",
         "tags": "#dailylife"
@@ -58,7 +58,7 @@
     },
     {"id":7,
         "title": "Limit reachability",
-        "subtitle": "Restrict the number of apps through which people can reach you directly.",
+        "subtitle": "Limit the number of apps through which people can send you messages. You will thereby considerably lower the number of inboxes you have check everyday.",
         "text": "Choose a restricted number of apps through which people can directly. Ex: messenger + whatsapp only. So you don’t have to check so many inboxes.",
         "icon": "body",
         "tags": "#dailylife #badhabits"
@@ -67,15 +67,15 @@
 
     {"id":8,
         "title": "Phone unlocking",
-        "subtitle": "Set up a long password to unlock your phone.",
+        "subtitle": "Set up a long password to unlock your phone. Don’t use any kind of facial or fingerprint recognition.",
         "text": "This will prevent you from using your phone too often. Don’t use face recognition, fingerprint recognition etc...",
         "icon": "lock-closed",
         "tags": "#downgrade"
 
     },
     {"id":9,
-        "title": "Uninstall facebook app",
-        "subtitle": "Use facebook local instead.",
+        "title": "Uninstall Facebook app",
+        "subtitle": "Install Facebook Local instead, an app where you can monitor the events you’ve been invited to and the events happening around you.",
         "text": "Facebook Local is an app where you can monitor the events you’ve been invited to and what is happening around you.",
         "icon": "logo-facebook",
         "tags": "#alternatives #socialmedia #badhabits"
@@ -83,15 +83,15 @@
     },
     {"id":10,
         "title": "Delete interactive games",
-        "subtitle": "Only use static puzzles on your phone.",
-        "text": "Interactive games are fun but they are much more addictive. Try to stick with puzzle games.",
+        "subtitle": "Interactive games are fun but they are much more addictive. Try to only use static puzzles on your phone.",
+        "text": " Try to stick with puzzle games.",
         "icon": "game-controller",
         "tags": "#games #badhabits"
 
     },
     {"id":11,
         "title": "Delete all games",
-        "subtitle": "Try not to use your phone when you get bored.",
+        "subtitle": "When bored, try not to consider smartphone games as your default option.",
         "text": "When bored, try not to use your phone as the default option. Look at other tips on what you can do instead. ",
         "icon": "game-controller",
         "tags": "#games #badhabits"
@@ -99,7 +99,7 @@
     },
     {"id":12,
         "title": "Listen to podcasts",
-        "subtitle": "Get access to information without looking at a screen.",
+        "subtitle": "Podcasts will help you get access to valuable information without looking at a screen.",
         "text": "Find some good podcasts out there (radio ?)",
         "icon": "logo-rss",
         "tags": "#goodhabits"
@@ -107,7 +107,7 @@
     },
     {"id":13,
         "title": "Read eBooks",
-        "subtitle": "Focus on better content.",
+        "subtitle": "Reading ebooks will help you concentrate for a longer time on a single subject, rather than being overflooded by a news/social media feed.",
         "text": "Rather than read a feed of mildly interesting stuff on social media, try to find good ebooks that you can read. So that when you open your phone to fight boredom, you are doing something good.",
         "icon": "book",
         "tags": "#goodhabits"
@@ -116,14 +116,14 @@
     {"id":14,
         "title": "Get an alarm clock",
         "subtitle": "Don’t wake up with your phone.",
-        "text": "help.",
+        "text": "help",
         "icon": "alarm",
         "tags": "#otherdevice"
 
     },
     {"id":15,
         "title": "Get a real watch",
-        "subtitle": "Know what time it is without being distracted.",
+        "subtitle": "Know what time it is without being tempted to check your messages.",
         "text": "help.",
         "icon": "watch",
         "tags": "#otherdevice"
@@ -131,51 +131,37 @@
     },
     {"id":16,
         "title": "Get a smart watch",
-        "subtitle": "And only allow calendar reminders and phone calls on watch.",
+        "subtitle": "And only allow calendar reminders and phone calls on watch. This will limit the number of times you have to access your phone.",
         "text": "A smartwatch limits the number of times you will need to access your phone.",
         "icon": "watch",
-        "tags": "#otherdevice"
-
-    },
-    {"id":17,
-        "title": "Get bluetooth earbuds",
-        "subtitle": "Limit the number of times you need to access your phone.",
-        "text": "help.",
-        "icon": "headset",
         "tags": "#otherdevice"
 
     },
     {"id":18,
         "title": "Black and White Mode",
         "subtitle": "Change your screen colors to ‘Grey levels’.",
-        "text": "Colorful patterns are a great way to keep you hooked on your phone, and red notifications keep your mind into alert mode. With black and white mode, you are more eager to stay focused on the world around you.",
+        "text": "Colorful patterns keep you hooked on your phone, and red notifications keep your mind into alert mode. With black and white mode, you will stay focused on the world around you.",
         "icon": "disc",
         "tags": "#downgrade #settings"
     },
     {"id":19,
-        "title": "Limit App Usage",
-        "subtitle": "Limit the maximum number of times you can open an app.",
-        "text": "help. ",
+        "title": "Parental Control",
+        "subtitle": "Use a Parental Control app and set a limit on the maximum number of times you can open an app.",
+        "text": "help",
         "icon": "alert",
         "tags": "#downgrade #settings"
     },
-    {"id":20,
-        "title": "Number of unlocking on Lock Screen",
-        "subtitle": "Monitor the number of times you check on your phone.",
-        "text": "How to change lock screen background ?",
-        "icon": "lock-open",
-        "tags": "#awareness #settings"
-    },
+
     {"id":21,
-        "title": "(Advanced) Disable animations",
-        "subtitle": "Make your phone less addictive by disabling animations.",
+        "title": "Disable animations (Advanced)",
+        "subtitle": "Make your phone less addictive by disabling animations. This requires activating developper mode.",
         "text": "(requires developper mode)",
         "icon": "expand",
         "tags": "#downgrade #settings #advanced"
     },
     {"id": 22,
-        "title": "(Advanced) Slow down your phone",
-        "subtitle": "Making your phone slower will make the battery last longer and your phone less attractive.",
+        "title": "Slow down your phone (Advanced)",
+        "subtitle": "Making your phone slower will make the battery last longer and your phone less distracting. This tip requires root privileges.",
         "text": "requires root privileges",
         "icon": "trending-down",
         "tags": "#downgrade #settings #advanced"
