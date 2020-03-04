@@ -69,8 +69,9 @@ export class DataService {
     return -1;
   }
 
-  public toggleGoal(tipId: number) {
+  public async toggleGoal(tipId: number) {
     const index = this.findGoal(tipId);
+
     if (index >= 0) {
       this.goals.splice(index, 1);
     } else {
@@ -84,22 +85,22 @@ export class DataService {
 
       this.goals.push(goal);
     }
-    this.saveGoals();
+    await this.saveGoals();
   }
 
-  private saveGoals() {
-    this.storage.set('goals', this.goals.filter( value => value !== undefined));
+  private async saveGoals() {
+    await this.storage.set('goals', this.goals.filter( value => value !== undefined));
   }
 
-  public setDuration(tipId: number, duration: number) {
+  public async setDuration(tipId: number, duration: number) {
     const goal = this.goals[this.findGoal(tipId)];
     goal.duration = duration;
-    this.saveGoals();
+    await this.saveGoals();
   }
-  public setHelpful(tipId: number, helpful: number) {
+  public async setHelpful(tipId: number, helpful: number) {
     const goal = this.goals[this.findGoal(tipId)];
     goal.helpful = helpful;
-    this.saveGoals();
+    await this.saveGoals();
   }
 
   public getGoals(): Goal[] {
