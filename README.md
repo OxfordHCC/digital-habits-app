@@ -5,7 +5,13 @@ Digital Habits aims to help you develop healthy digital habits. It comes with ti
 <p align="center">
   <img alt="Digital Habits Logo" src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" style="display: block; margin: 0 auto;" height="100%" width="200" >
 </p>
+
 Developed by [Guillaume Couairon](https://github.com/PhazCode) and [Konrad Kollnig](https://github.com/kasnder).
+
+<p align="center">
+    <img alt="Screenshot of main screen" src="resources/Screenshot_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
+    <img alt="Screenshot of trackers screen" src="resources/Screenshot_Tips.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
+</p>
 
 ## Installation
 
