@@ -17,6 +17,7 @@ iOS: To be released soon.
     <img alt="Screenshot of main screen" src="resources/Screenshot_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
     <img alt="Screenshot of trackers screen" src="resources/Screenshot_Tips.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
 </p>
+
 ## Build
 
 This app was developed with Ionic v5.
