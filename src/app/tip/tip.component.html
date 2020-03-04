@@ -1,11 +1,11 @@
-<ion-card *ngIf="tip" [routerLink]="'/goal/' + tip.id">
+<ion-card *ngIf="tip">
   
     
-      <ion-button color='light'>
-        <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline" (click)="data.toggleGoal(tip.id)"></ion-icon>
-        <ion-icon *ngIf="data.findGoal(tip.id) >=0 " name="star"></ion-icon>
-      </ion-button>
       <ion-card-header>
+        <ion-button color='light' (click)="data.toggleGoal(tip.id)">
+          <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline"></ion-icon>
+          <ion-icon *ngIf="data.findGoal(tip.id) >=0 " name="star"></ion-icon>
+        </ion-button>
       <ion-card-subtitle>{{ tip.tags }}
     </ion-card-subtitle>
     <ion-card-title size="auto">

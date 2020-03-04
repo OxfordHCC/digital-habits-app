@@ -17,41 +17,50 @@
   <ion-card *ngFor="let goal of data.getGoals(); let i = index" [attr.data-index]="i">
     <ion-card-header>
       <ion-card-subtitle>
-        {{ data.getTips()[goal.tipId].tags }}
+        {{ data.getTipById(goal.tipId).tags }}
         <ion-note class="ion-float-right" style="font-weight: normal">Added: {{ goal.added | date }}</ion-note>
       </ion-card-subtitle>
-      <ion-card-title>Goal {{ i + 1 }}: {{ data.getTips()[goal.tipId].title }}</ion-card-title>
+      <ion-card-title>Goal {{ i + 1 }}: {{ data.getTipById(goal.tipId).title }}</ion-card-title>
     </ion-card-header>
-
     <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col>Did you keep it up for seven days?</ion-col>
-          <ion-col size="auto"><ion-button shape="round" size="small">
-            <ion-icon name="thumbs-up"></ion-icon>
-          </ion-button></ion-col>
-          <ion-col size="auto"><ion-button shape="round" size="small" color="tertiary">
-            <ion-icon name="thumbs-down"></ion-icon>
-          </ion-button></ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>Did it you find it helpful?</ion-col>
-          <ion-col size="auto"><ion-button shape="round" size="small" color="success">
-            <ion-icon name="happy-outline"></ion-icon>
-          </ion-button></ion-col>
-          <ion-col size="auto"><ion-button shape="round" size="small" color="danger">
-            <ion-icon name="sad-outline"></ion-icon>
-          </ion-button></ion-col>
-        </ion-row>
-      </ion-grid>
+      <p>{{ data.getTipById(goal.tipId).subtitle }} </p>
+      <br/>
+      <div class="ion-text-center">
+      How long did you keep it up ?
+    </div>
+      <ion-segment value="{{goal.duration}}">
+        <ion-segment-button (click)="data.setDuration(goal.tipId, 1)" value="1">
+          <ion-label>A Day</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="data.setDuration(goal.tipId, 7)" value="7">
+          <ion-label>A Week</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="data.setDuration(goal.tipId, 30)" value="30">
+          <ion-label>A Month</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+<br/>
+      <div class="ion-text-center">
+        Did you find it helpful ?
+      </div><br/>
+      <ion-segment value="{{goal.helpful}}">
+        <ion-segment-button (click)="data.setHelpful(goal.tipId, -1)" value="-1">
+          <ion-label><ion-icon name="sad-outline" size="large" color="danger"></ion-icon></ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="data.setHelpful(goal.tipId, 0)" value="0">
+          <ion-label><ion-icon name="happy-outline" size="large" color='medium'></ion-icon></ion-label>
+        </ion-segment-button>
+        <ion-segment-button (click)="data.setHelpful(goal.tipId, 1)" value="1">
+          <ion-label><ion-icon name="happy-outline" size="large" color="success"></ion-icon></ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+
       <!--<p>
         {{ data.getTips()[goal.tipId].subtitle }}
       </p>-->
-      <div class="ion-text-center">
-        <ion-button (click)="data.toggleGoal(goal.tipId)">
-          Remove goal
-        </ion-button>
-      </div>
+      
+
     </ion-card-content>
 
     <!--<ion-footer>

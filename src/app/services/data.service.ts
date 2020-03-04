@@ -6,8 +6,9 @@ import data from './data.json';
 export interface Goal {
   tipId: number;
   added: Date;
-  helpful: boolean;
+  helpful: number;
   daysStreak: number;
+  duration: number;
 }
 
 export interface Tip {
@@ -76,8 +77,9 @@ export class DataService {
       const goal: Goal = {
         tipId,
         added: new Date(),
-        helpful: null,
-        daysStreak: 0
+        helpful: 0,
+        daysStreak: 0,
+        duration: 1
       };
 
       this.goals.push(goal);
@@ -87,6 +89,17 @@ export class DataService {
 
   private saveGoals() {
     this.storage.set('goals', this.goals.filter( value => value !== undefined));
+  }
+
+  public setDuration(tipId: number, duration: number) {
+    const goal = this.goals[this.findGoal(tipId)];
+    goal.duration = duration;
+    this.saveGoals();
+  }
+  public setHelpful(tipId: number, helpful: number) {
+    const goal = this.goals[this.findGoal(tipId)];
+    goal.helpful = helpful;
+    this.saveGoals();
   }
 
   public getGoals(): Goal[] {
