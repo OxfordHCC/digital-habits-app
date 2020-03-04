@@ -1,16 +1,13 @@
-<ion-card *ngIf="tip">
-  
-    
+<ion-card *ngIf="tip"> <!-- [routerLink]="'/tip/' + tip.id" -->
       <ion-card-header>
         <ion-button color='light' (click)="toggleGoal()">
           <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline"></ion-icon>
-          <ion-icon *ngIf="data.findGoal(tip.id) >=0 " name="star"></ion-icon>
+          <ion-icon *ngIf="data.findGoal(tip.id) >=  0" name="star"></ion-icon>
         </ion-button>
       <ion-card-subtitle>{{ tip.tags }}
     </ion-card-subtitle>
     <ion-card-title size="auto">
-      <ion-icon name="{{tip.icon}}" color="primary"></ion-icon> {{ tip.title }} 
-      
+      <ion-icon name="{{tip.icon}}" color="primary"></ion-icon> {{ tip.title }}
      </ion-card-title>
   </ion-card-header>
 
@@ -20,20 +17,3 @@
     </p>
   </ion-card-content>
 </ion-card>
-
-<!--<ion-item *ngIf="goal" [routerLink]="'/goal/' + goal.id" [detail]="false">
-  <div slot="start" [class]="!goal.read ? 'dot dot-unread' : 'dot'"></div>
-  <ion-label class="ion-text-wrap">
-    <h2>
-      {{ goal.title }}
-      <span class="date">
-        <ion-note>{{ goal.date }}</ion-note>
-        <ion-icon name="chevron-forward" size="small" *ngIf="isIos()"></ion-icon>
-      </span>
-    </h2>
-    <h3>{{ goal.tags }}</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </ion-label>
-</ion-item>-->
