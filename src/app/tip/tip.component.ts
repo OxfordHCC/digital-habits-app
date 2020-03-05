@@ -20,7 +20,7 @@ export class TipComponent implements OnInit {
   async toggleGoal() {
     await this.data.toggleGoal(this.tip.id);
 
-    if (this.data.findGoal(this.tip.id) >= 0) {
+    if (this.data.isGoal(this.tip.id)) {
       const toast = await this.toastController.create({
         message: 'Goal added. A reminder will be shown in 7 days.',
         duration: 2000

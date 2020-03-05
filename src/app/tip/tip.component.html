@@ -10,8 +10,8 @@
         </div>
         <div>
             <ion-button color='light' (click)="toggleGoal()">
-                <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline"></ion-icon>
-                <ion-icon *ngIf="data.findGoal(tip.id) >=  0" name="star"></ion-icon>
+                <ion-icon *ngIf="!data.isGoal(tip.id)" name="star-outline"></ion-icon>
+                <ion-icon *ngIf="data.isGoal(tip.id)" name="star"></ion-icon>
             </ion-button>
         </div>
     </ion-card-header>

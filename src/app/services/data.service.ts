@@ -35,6 +35,10 @@ export class DataService {
     });
   }
 
+  public isGoal(tipId: number): boolean {
+    return this.findGoal(tipId) >= 0;
+  }
+
   public findGoal(tipId: number): number {
     for (const [index, goal] of this.goals.entries()) {
       if (goal.tipId === tipId) {
