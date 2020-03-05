@@ -1,15 +1,20 @@
 <ion-card *ngIf="tip"> <!-- [routerLink]="'/tip/' + tip.id" -->
-      <ion-card-header>
-        <ion-button color='light' (click)="toggleGoal()">
-          <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline"></ion-icon>
-          <ion-icon *ngIf="data.findGoal(tip.id) >=  0" name="star"></ion-icon>
-        </ion-button>
-      <ion-card-subtitle>{{ tip.tags }}
-    </ion-card-subtitle>
-    <ion-card-title size="auto">
-      <ion-icon name="{{tip.icon}}" color="primary"></ion-icon> {{ tip.title }}
-     </ion-card-title>
-  </ion-card-header>
+    <ion-card-header class="card-header">
+        <div>
+            <ion-card-subtitle>
+                {{ tip.tags }}
+            </ion-card-subtitle>
+            <ion-card-title>
+                <ion-icon name="{{tip.icon}}" color="primary"></ion-icon> {{ tip.title }}
+            </ion-card-title>
+        </div>
+        <div>
+            <ion-button color='light' (click)="toggleGoal()">
+                <ion-icon *ngIf="data.findGoal(tip.id) == -1" name="star-outline"></ion-icon>
+                <ion-icon *ngIf="data.findGoal(tip.id) >=  0" name="star"></ion-icon>
+            </ion-button>
+        </div>
+    </ion-card-header>
 
   <ion-card-content>
     <p>

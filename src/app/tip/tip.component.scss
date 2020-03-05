@@ -1,4 +1,8 @@
-ion-button {
-  float:right;
-  margin:10px;
+.card-header {
+  display: flex;
+  justify-content: space-between;
+
+  ion-card-title {
+    margin-top: 8px;
+  }
 }

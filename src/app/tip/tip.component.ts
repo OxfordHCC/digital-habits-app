@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {DataService, Tip} from '../services/data.service';
-import { ToastController } from '@ionic/angular';
-import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+import {ToastController} from '@ionic/angular';
+import {ELocalNotificationTriggerUnit, LocalNotifications} from '@ionic-native/local-notifications/ngx';
 
 @Component({
   selector: 'app-tip',
@@ -27,18 +27,18 @@ export class TipComponent implements OnInit {
       });
       await toast.present();
 
-      const sevenDays = new Date();
-      sevenDays.setDate(sevenDays.getDate() + 7);
-
       // Check out: https://stackoverflow.com/questions/53925894/ionic-what-is-the-correct-way-to-change-icon-in-local-notifications-plugin/54115579#54115579
       this.localNotifications.schedule({
+        id: this.tip.id,
         text: 'Keep track of your goals',
         title: this.tip.title,
-        trigger: {at: sevenDays},
+        trigger: { in: 7, unit: ELocalNotificationTriggerUnit.DAY },
         smallIcon: 'res://ic_stat_notify',
         // icon: 'file://assets/public/assets/icon/favicon.png',
         sound: null
       });
+    } else {
+      await this.localNotifications.cancel(this.tip.id);
     }
   }
 }
