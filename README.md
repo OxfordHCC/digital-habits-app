@@ -12,12 +12,18 @@ Developed by [Guillaume Couairon](https://github.com/PhazCode) and [Konrad Kolln
 
 Android: Download [here](https://play.google.com/store/apps/details?id=build.digital.habits) on the Google Play Store.
 
+<p align="center">
+    <img alt="Screenshot of main screen Android" src="resources/Screenshot_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
+    <img alt="Screenshot of trackers screen Android" src="resources/Screenshot_Tips.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
+</p>
+
 iOS: To be released soon.
 
 <p align="center">
-    <img alt="Screenshot of main screen" src="resources/Screenshot_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
-    <img alt="Screenshot of trackers screen" src="resources/Screenshot_Tips.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
+    <img alt="Screenshot of main screen iOS" src="resources/Screenshot_iOS_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
+    <img alt="Screenshot of trackers screen iOS" src="resources/Screenshot_iOS_Tips.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
 </p>
+
 
 ## Build
 
@@ -29,13 +35,15 @@ Use `ionic serve` and debug in web browser.
 
 ### Deployment
 
-To build for Android:
+To build for [Android | iOS]:
 
 ```bash
 ionic build --prod
-npx cap copy android
-npx cap open android
+npx cap copy [android | ios]
+npx cap open [android | ios]
 ```
+
+Before the first iOS build, you may have to run `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`.
 
 ## Credits
 
