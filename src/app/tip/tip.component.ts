@@ -22,7 +22,9 @@ export class TipComponent implements OnInit {
 
     if (this.data.isGoal(this.tip.id)) {
       const toast = await this.toastController.create({
-        message: 'Goal added. A reminder will be shown in 7 days.',
+        header: 'Goal added',
+        message: 'A reminder will be shown in 7 days.',
+        position: 'top',
         duration: 2000
       });
       await toast.present();
