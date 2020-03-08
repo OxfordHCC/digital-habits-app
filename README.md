@@ -45,6 +45,10 @@ npx cap open [android | ios]
 
 Before the first iOS build, you may have to run `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`.
 
+## Privacy Notice
+
+This app does not collect any data from users.
+
 ## Credits
 
 This app uses Material icons from Google.
