@@ -10,14 +10,14 @@ Developed by [Guillaume Couairon](https://github.com/PhazCode) and [Konrad Kolln
 
 ## Installation
 
-Android: Download [here](https://play.google.com/store/apps/details?id=build.digital.habits) on the Google Play Store.
+Android: Download [here](https://play.google.com/store/apps/details?id=build.digital.habits) from the Google Play Store.
 
 <p align="center">
     <img alt="Screenshot of main screen Android" src="resources/Screenshot_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
     <img alt="Screenshot of trackers screen Android" src="resources/Screenshot_Tips.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
 </p>
 
-iOS: To be released soon.
+iOS: Download [here](https://apps.apple.com/app/digital-habits/id1502029615) from the Apple App Store.
 
 <p align="center">
     <img alt="Screenshot of main screen iOS" src="resources/Screenshot_iOS_Goals.png" style="display: block; margin: 0 auto;" height="100%" width="33%" >
