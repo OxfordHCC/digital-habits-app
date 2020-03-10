@@ -27,7 +27,16 @@ iOS: Download [here](https://apps.apple.com/app/digital-habits/id1502029615) fro
 
 ## Build
 
-This app was developed with Ionic v5.
+This app was developed with [Ionic v5](https://ionicframework.com/docs/installation/cli).
+
+Before your first build, you have to run
+
+```bash
+npm install -g @ionic/cli
+npm install
+```
+
+Most code is in `src/app/` and written in Typescript / Angular.
 
 ### Development
 
@@ -51,7 +60,7 @@ This app does not collect any data from users.
 
 ## Credits
 
-This app uses Material icons from Google.
+This app uses [Material icons](https://github.com/google/material-design-icons) from Google.
 
 ## License
 
