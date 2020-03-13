@@ -115,7 +115,7 @@
     },
     {"id":14,
         "title": "Get a real Alarm Clock",
-        "subtitle": "The first thing most people do in the morning is check there phone. Do you want to be like most people?",
+        "subtitle": "The first thing most people do in the morning is check their phone. Do you want to be like most people?",
         "text": "help",
         "icon": "alarm",
         "tags": "#otherdevice"
